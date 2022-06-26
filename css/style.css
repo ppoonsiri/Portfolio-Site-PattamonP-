@@ -1,0 +1,71 @@
+/*
+Colors used:
+Primary Color (Black): #030303;
+Secondary Color (Gray): #2B2B2B;
+Tetriary Color (Gray): #6A6A6A;
+Background Color (Gray): #E1E1E1;
+Hyperlink Color (Blue): #0389D4
+*/
+
+body {
+  background-color: #E1E1E1;
+
+  /* Body */
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  /* or 133% */
+
+  letter-spacing: 0.04em;
+
+  /* #2B2B2B */
+
+  color: #2B2B2B;
+}
+
+h1 {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 47px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: #0389D4;
+  text-decoration: none; /* No underlining */
+}
+
+a:visited { /* visited link */
+  color: #053D5B;
+}
+
+a:hover {
+  color: #096395;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+
+a:active { /* selected link */
+  color: #053D5B;
+}
+
+a:hover,
+a:focus {
+  color: #096395;
+  text-decoration: underline;
+}
