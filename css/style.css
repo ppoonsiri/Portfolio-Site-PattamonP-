@@ -11,6 +11,8 @@ header {
   position: fixed;
   box-shadow: 0px 5px 12px 0px rgba(50, 50, 50, 0.3);
   width: 100%;
+  text-align: center;
+  padding: 10px 0;
 }
 
 body {
@@ -56,6 +58,10 @@ h3 {
   color: #030303;
 }
 
+.work h2, footer h2, .skills h2, .about h1, .project h1 {
+  margin-bottom: 0.3em;
+}
+
 .spar h3 {
   text-transform: uppercase;
 }
@@ -68,6 +74,18 @@ h3 {
 .project h2 {
   font-size: 1.3em;
   text-transform: none;
+}
+
+.project #contact h2 {
+  text-transform: uppercase;
+}
+
+.project .section {
+  padding: 0 0 32px;
+}
+
+.project .intro {
+  padding: 48px 0 0;
 }
 
 img {
@@ -141,22 +159,25 @@ hr {
 }
 
 .container {
-  padding: 0 15px;
+  padding: 0 16px;
 }
 
-.row {
-  margin-bottom: 48px;
+.section {
+  padding: 48px 0;
 }
 
 .logo {
   max-width: 250px;
-  text-align: center;
-  padding: 10px 0;
+}
+
+nav {
+  margin-top: 0.75em;
 }
 
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 nav > ul > li {
@@ -170,19 +191,77 @@ nav > ul > li > a {
   color: #2B2B2B;
 }
 
-#hero {
-  background-color: #E1E1E1;
-  padding-top: 148px;
+ main {
+  padding-top: 109px;
   padding-bottom: 64px;
-  display: inline-block;
-  width: 100%;
+}
+
+.work .row {
+  padding-bottom: 48px;
 }
 
 .social {
   margin: 48px 0;
-  display: inline-block;
+}
+
+.social svg {
+  border-radius: 50%;
+}
+
+.social a {
+  text-decoration: none;
 }
 
 .copyright {
   text-align: center;
+}
+
+.competitors {
+  display:flex;
+  flex-direction: column;
+}
+
+iframe {
+  width: 100%;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+  text-align: unset;
+  }
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .logo {
+    max-width: 50%;
+  }
+  nav {
+  margin-top: 0;
+  }
+  .competitors {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .competitors picture {
+    max-width: 25%;
+    display: block;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
 }
