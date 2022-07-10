@@ -16,12 +16,11 @@ header {
   box-shadow: 0px 5px 12px 0px rgba(50, 50, 50, 0.3);
   width: 100%;
   text-align: center;
-  padding: 24px 0 16px ;
+  padding: 24px 0 16px;
 }
 
 body {
   background-color: #E1E1E1;
-
   /* Body */
   font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
@@ -106,7 +105,8 @@ a {
   color: #0389D4;
 }
 
-a:visited { /* visited link */
+a:visited {
+  /* visited link */
   color: #0389D4;
 }
 
@@ -116,14 +116,16 @@ a:focus {
   text-decoration: none;
 }
 
-a:active { /* selected link */
+a:active {
+  /* selected link */
   color: #096395;
 }
 
 .button {
   display: inline-block;
   background-color: #030303;
-  color: #FFFFFF; /* needed to override the default link color */
+  color: #FFFFFF;
+  /* needed to override the default link color */
   text-transform: uppercase;
   padding: 11px 44px;
   border-radius: 4px;
@@ -132,9 +134,11 @@ a:active { /* selected link */
 }
 
 .button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
   color: #FFFFFF;
 }
+
 .button:active {
   opacity: 0.8;
 }
@@ -156,7 +160,8 @@ hr {
   border: none;
   height: 1px;
   /* Set the hr color */
-  color: #6A6A6A; /* old IE */
+  color: #6A6A6A;
+  /* old IE */
   background-color: #6A6A6A;
 }
 
@@ -181,24 +186,24 @@ nav {
   margin-top: 0.75em;
 }
 
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-nav > ul > li {
+nav>ul>li {
   display: inline-block;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   padding: 0 16px;
   text-transform: none;
   font-weight: 500;
   color: #2B2B2B;
 }
 
- main {
+main {
   padding-top: 109px;
   padding-bottom: 64px;
 }
@@ -228,7 +233,7 @@ nav > ul > li > a {
 }
 
 .competitors {
-  display:flex;
+  display: flex;
   flex-direction: column;
 }
 
@@ -245,24 +250,47 @@ iframe {
 
 /*Animation*/
 @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
 }
+
 .sun {
   animation: 4s color-change infinite alternate linear;
 }
+
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
+
 .cloud-front {
   animation: 30s cloud-move infinite alternate linear;
 }
+
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
+
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
@@ -274,43 +302,54 @@ Medium devices (640px and larger)
   body {
     font-size: 1.125em;
   }
+
   header {
     text-align: unset;
   }
+
   header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
   header .logo {
     max-width: 50%;
   }
+
   nav {
     margin-top: 0;
   }
+
   .col-md-6 {
     width: 50%;
   }
+
   [class*="col-"] {
-    float:left;
+    float: left;
     padding: 0 10px;
   }
+
   .row::after {
     content: "";
     clear: both;
     display: table;
-}
+  }
+
   .welcome span {
     display: block;
   }
+
   .about .introduction p {
     margin-top: unset;
   }
+
   .competitors {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
+
   .competitors picture {
     max-width: 25%;
     display: block;
@@ -324,21 +363,24 @@ Large devices (1024px or larger)
   [class*="col-"] {
     padding: 0 1em;
   }
+
   .col-lg-7 {
     width: 60%;
   }
+
   .col-lg-5 {
     width: 40%;
   }
 
-/* ==============================
+  /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
-}
+  @media only screen and (min-width: 1440px) {}
+
   .col-xl-8 {
-  width: 70%;
-}
+    width: 70%;
+  }
+
   .col-xl-4 {
-  width: 30%;
-}
+    width: 30%;
+  }
