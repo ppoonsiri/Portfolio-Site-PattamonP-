@@ -12,7 +12,7 @@ header {
   box-shadow: 0px 5px 12px 0px rgba(50, 50, 50, 0.3);
   width: 100%;
   text-align: center;
-  padding: 10px 0;
+  padding: 16px 0;
 }
 
 body {
@@ -22,7 +22,7 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.4;
   /* or 133% */
   letter-spacing: 0.04em;
@@ -147,10 +147,10 @@ a:active { /* selected link */
 
 hr {
   border: none;
-    height: 1px;
-    /* Set the hr color */
-    color: #6A6A6A; /* old IE */
-    background-color: #6A6A6A;
+  height: 1px;
+  /* Set the hr color */
+  color: #6A6A6A; /* old IE */
+  background-color: #6A6A6A;
 }
 
 /* Layout styling */
@@ -159,7 +159,7 @@ hr {
 }
 
 .container {
-  padding: 0 16px;
+  padding: 0 24px;
 }
 
 .section {
@@ -196,6 +196,10 @@ nav > ul > li > a {
   padding-bottom: 64px;
 }
 
+.row {
+  padding-top: 8px;
+}
+
 .work .row {
   padding-bottom: 48px;
 }
@@ -221,6 +225,13 @@ nav > ul > li > a {
   flex-direction: column;
 }
 
+.social svg rect {
+  width: 100%;
+  max-width: 92px;
+  height: 100%;
+  max-width: 92px;
+}
+
 iframe {
   width: 100%;
 }
@@ -230,7 +241,7 @@ Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
   header {
-  text-align: unset;
+    text-align: unset;
   }
   header .container {
     display: flex;
@@ -241,7 +252,25 @@ Medium devices (640px and larger)
     max-width: 50%;
   }
   nav {
-  margin-top: 0;
+    margin-top: 0;
+  }
+  body {
+    font-size: 1.125em;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  [class*="col-"] {
+    float: left;
+    padding: 0 10px;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+  .welcome span {
+    display: block;
   }
   .competitors {
     flex-direction: row;
@@ -258,6 +287,55 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+  header {
+    text-align: unset;
+  }
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .logo {
+    max-width: 50%;
+  }
+  nav {
+    margin-top: 0;
+  }
+  body {
+    font-size: 1.125em;
+  }
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .col-lg-7 {
+    width: 58%;
+  }
+  .col-lg-5 {
+    width: 42%;
+  }
+  [class*="col-"] {
+    float: left;
+    padding: 0 10px;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+  .welcome span {
+    display: block;
+  }
+  .competitors {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .competitors picture {
+    max-width: 25%;
+    display: block;
+  }
 }
 
 /* ==============================
