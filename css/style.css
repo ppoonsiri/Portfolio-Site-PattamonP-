@@ -97,22 +97,22 @@ img {
   height: auto;
 }
 
-.container {
-  max-width: 1200px;
+.competitors img {
+  padding: 24px 0;
 }
 
 a {
-  color: #0389D4;
+  color: #030303;
 }
 
 a:visited {
   /* visited link */
-  color: #0389D4;
+  color: #030303;
 }
 
 a:hover,
 a:focus {
-  color: #096395;
+  color: #0389D4;
   text-decoration: none;
 }
 
@@ -121,7 +121,7 @@ a:active {
   color: #096395;
 }
 
-.button {
+a.button {
   display: inline-block;
   background-color: #030303;
   color: #FFFFFF;
@@ -133,13 +133,17 @@ a:active {
   transition: 0.2s opacity;
 }
 
-.button:hover {
+a.button:hover {
   opacity: 0.8;
   /* Reduces the opacity of the button to 80% */
   color: #FFFFFF;
 }
 
-.button:active {
+a.button:visited {
+  color: #FFFFFF;
+}
+
+a.button:active {
   opacity: 0.8;
 }
 
@@ -198,9 +202,14 @@ nav>ul>li {
 
 nav>ul>li>a {
   padding: 0 16px;
-  text-transform: none;
+  text-decoration: none;
   font-weight: 500;
   color: #2B2B2B;
+}
+
+nav a.active {
+  color: #0389D4;
+  border-bottom: 3px solid #0389D4;
 }
 
 main {
@@ -321,6 +330,14 @@ Medium devices (640px and larger)
     margin-top: 0;
   }
 
+  main {
+    padding-top: 70px;
+  }
+
+  footer {
+    text-align: center;
+  }
+
   .col-md-6 {
     width: 50%;
   }
@@ -338,6 +355,10 @@ Medium devices (640px and larger)
 
   .welcome span {
     display: block;
+  }
+
+  .welcome {
+    text-align: center;
   }
 
   .about .introduction p {
@@ -372,10 +393,28 @@ Large devices (1024px or larger)
     width: 40%;
   }
 
+  body {
+    font-size: 1.5em;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .project main h2, .project main h3, .project main ul, .project main p {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .intro img {
+    padding-bottom: 32px;
+  }
+}
   /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-  @media only screen and (min-width: 1440px) {}
+  @media only screen and (min-width: 1440px) {
 
   .col-xl-8 {
     width: 70%;
@@ -384,3 +423,4 @@ X-large devices (1440px or larger)
   .col-xl-4 {
     width: 30%;
   }
+}
