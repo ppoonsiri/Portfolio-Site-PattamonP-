@@ -15,7 +15,6 @@ header {
   position: fixed;
   box-shadow: 0px 5px 12px 0px rgba(50, 50, 50, 0.3);
   width: 100%;
-  text-align: center;
   padding: 24px 0 16px;
 }
 
@@ -183,21 +182,13 @@ hr {
 }
 
 .logo {
-  max-width: 250px;
-}
-
-nav {
-  margin-top: 0.75em;
+  max-width: 130px;
 }
 
 nav>ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-}
-
-nav>ul>li {
-  display: inline-block;
 }
 
 nav>ul>li>a {
@@ -207,13 +198,46 @@ nav>ul>li>a {
   color: #2B2B2B;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}  
+
 nav a.active {
   color: #0389D4;
   border-bottom: 3px solid #0389D4;
 }
 
 main {
-  padding-top: 109px;
+  padding-top: 69px;
   padding-bottom: 64px;
 }
 
@@ -316,22 +340,38 @@ Medium devices (640px and larger)
     text-align: unset;
   }
 
-  header .container {
+  header .navtoggle {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
   header .logo {
-    max-width: 50%;
+    max-width: 55%;
   }
 
   nav {
     margin-top: 0;
   }
 
+  nav > ul {
+  margin: 0.725em 0;
+  }
+
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+  display: none;
+  }
+
   main {
-    padding-top: 70px;
+    padding-top: 91px;
   }
 
   footer {
