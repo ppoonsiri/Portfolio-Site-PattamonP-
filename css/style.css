@@ -229,13 +229,7 @@ nav>ul>li>a {
 
 .navtoggle.responsive li:last-child  {
   padding: 0 0 10px;
-}  
-
-nav a.active {
-  color: #0389D4;
-  border-bottom: 3px solid #0389D4;
 }
-
 main {
   padding-top: 69px;
   padding-bottom: 64px;
@@ -354,6 +348,11 @@ Medium devices (640px and larger)
     margin-top: 0;
   }
 
+  nav a.active {
+    color: #0389D4;
+    border-bottom: 3px solid #0389D4;
+  }
+
   nav > ul {
   margin: 0.725em 0;
   }
@@ -426,11 +425,11 @@ Large devices (1024px or larger)
   }
 
   .col-lg-7 {
-    width: 60%;
+    width: 50%;
   }
 
   .col-lg-5 {
-    width: 40%;
+    width: 50%;
   }
 
   body {
@@ -455,12 +454,4 @@ Large devices (1024px or larger)
 X-large devices (1440px or larger)
 ================================= */
   @media only screen and (min-width: 1440px) {
-
-  .col-xl-8 {
-    width: 70%;
-  }
-
-  .col-xl-4 {
-    width: 30%;
-  }
 }
