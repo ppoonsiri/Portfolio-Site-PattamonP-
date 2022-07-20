@@ -134,7 +134,7 @@ a:active {
 a.button {
   display: inline-block;
   background-color: #030303;
-  color: #ffffff;
+  color: #fff;
 
   /* needed to override the default link color */
   text-transform: uppercase;
@@ -148,11 +148,11 @@ a.button:hover {
   opacity: 0.8;
 
   /* Reduces the opacity of the button to 80% */
-  color: #ffffff;
+  color: #fff;
 }
 
 a.button:visited {
-  color: #ffffff;
+  color: #fff;
 }
 
 a.button:active {
@@ -169,7 +169,7 @@ a.button:active {
 .button.email:hover,
 .button.email:active {
   background-color: #2b2b2b;
-  color: #ffffff;
+  color: #fff;
   border-color: #2b2b2b;
 }
 
@@ -242,16 +242,13 @@ nav > ul > li > a {
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-<<<<<<< Updated upstream
-  border-top: 1px solid rgb(106,106,106);
-=======
   border-top: 1px solid rgb(106, 106, 106);
->>>>>>> Stashed changes
 }
 
 .navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
+
 main {
   padding-top: 69px;
   padding-bottom: 64px;
@@ -370,13 +367,8 @@ Medium devices (640px and larger)
   }
 
   nav a.active {
-<<<<<<< Updated upstream
-    color: #0389D4;
-    border-bottom: 3px solid #0389D4;
-=======
     color: #0389d4;
     border-bottom: 3px solid #0389d4;
->>>>>>> Stashed changes
   }
 
   nav > ul {
@@ -457,7 +449,7 @@ Large devices (1024px or larger)
   .col-lg-5 {
     width: 50%;
   }
-
+  
   body {
     font-size: 1.5em;
   }
@@ -481,12 +473,7 @@ Large devices (1024px or larger)
   }
 }
 
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
-<<<<<<< Updated upstream
-  @media only screen and (min-width: 1440px) {
-=======
-@media only screen and (min-width: 1440px) {
->>>>>>> Stashed changes
-}
+/* X-large devices (1440px or larger) */
+
+/* @media only screen and (min-width: 1440px) {
+ */
